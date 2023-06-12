@@ -32,7 +32,7 @@ public class GameView extends JFrame implements ActionListener {
         this.setLayout(null);
         pnl1.setLayout(null);
         pnl2.setLayout(null);
-        this.setTitle("CyberDice");
+        this.setTitle("FailureChess");
 
         scrollpane1.setBounds(20, 100, 300, 500);
         scrollpane2.setBounds(370, 100, 300, 500);
@@ -92,7 +92,7 @@ public class GameView extends JFrame implements ActionListener {
         
 }
 
-// My gf is hot
+
 
 
 
