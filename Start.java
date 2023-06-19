@@ -4,6 +4,7 @@ import javax.swing.JLabel;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JTextField;
+import java.awt.image.BufferedImage;
 
 public class Start extends JFrame implements ActionListener {
 
@@ -23,13 +24,13 @@ public class Start extends JFrame implements ActionListener {
   public void showDialog() {
     setLayout(null);
 
-    player1.setBounds(15, 100, 250, 20);
-    player2.setBounds(15, 150, 250, 20);
-    player1Label.setBounds(15, 80, 250, 20);
-    player2Label.setBounds(15, 130, 250, 20);
-    startgame.setBounds(35, 185, 200, 40);
-    rules.setBounds(35, 240, 200, 40);
-    quit.setBounds(35, 295, 200, 40);
+    player1.setBounds(100, 140, 200, 20);
+    player2.setBounds(100, 180, 200, 20);
+    player1Label.setBounds(100, 120, 250, 20);
+    player2Label.setBounds(100, 160, 250, 20);
+    startgame.setBounds(75, 215, 250, 40);
+    rules.setBounds(75, 270, 250, 40);
+    quit.setBounds(75, 325, 250, 40);
 
     this.add(player1);
     this.add(player2);
@@ -45,7 +46,7 @@ public class Start extends JFrame implements ActionListener {
   
     setTitle("FailureChess");
     setDefaultCloseOperation(EXIT_ON_CLOSE);
-    setSize(280,400);
+    setSize(400,400);
     setVisible(true); 
 
     }
