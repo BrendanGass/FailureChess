@@ -1,5 +1,7 @@
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.*;
+import javax.swing.*;
 import javax.swing.JLabel;
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -13,6 +15,7 @@ public class Start extends JFrame implements ActionListener {
   JButton quit = new JButton("Quit");
   JLabel player1Label = new JLabel("Player 1");
   JLabel player2Label = new JLabel("Player 2");
+  JLabel gamename = new JLabel("FailureChess");
   JTextField player1 = new JTextField();
   JTextField player2 = new JTextField();
   public String name1;
@@ -28,6 +31,7 @@ public class Start extends JFrame implements ActionListener {
     player2.setBounds(100, 180, 200, 20);
     player1Label.setBounds(100, 120, 250, 20);
     player2Label.setBounds(100, 160, 250, 20);
+    gamename.setBounds(155, 55, 250, 20);
     startgame.setBounds(75, 215, 250, 40);
     rules.setBounds(75, 270, 250, 40);
     quit.setBounds(75, 325, 250, 40);
@@ -36,6 +40,7 @@ public class Start extends JFrame implements ActionListener {
     this.add(player2);
     this.add(player1Label);
     this.add(player2Label);
+    this.add(gamename);
     this.add(startgame);
     this.add(rules);
     this.add(quit);

@@ -1,5 +1,6 @@
 import java.awt.Color;
-
+import java.awt.*;
+import javax.swing.*;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 public class Panel extends JPanel {

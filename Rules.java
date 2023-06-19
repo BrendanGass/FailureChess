@@ -5,11 +5,13 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JTextField;
 import javax.swing.JTextArea;
+import java.awt.*;
+import javax.swing.*;
 
 public class Rules extends JFrame implements ActionListener {
 
 
-  JButton quit = new JButton("Quit");
+  JButton quit = new JButton("Back");
   JLabel rules = new JLabel();
   
   
@@ -35,7 +37,6 @@ public class Rules extends JFrame implements ActionListener {
     setVisible(true); 
 
     }
-
   public void actionPerformed(ActionEvent e) {
     if (e.getSource() == quit) {
       dispose();
