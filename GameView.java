@@ -18,8 +18,8 @@ public class GameView extends JFrame {
     public GameView(String name1, String name2)  {
 
         setDefaultCloseOperation(EXIT_ON_CLOSE);
-        add( new BoardPanel());          //add underlaying board
-        setGlassPane(new PiecesPanel()); //add glass pane
+        add( new BoardPanel());        
+        setGlassPane(new PiecesPanel()); 
         getGlassPane().setVisible(true);
         pack();
         setVisible(true);
@@ -48,16 +48,15 @@ class BoardPanel extends JPanel {
     }
 }
 
-//container for pieces
+
 class PiecesPanel extends JPanel {
 
     public static final int LENGTH = 6;
     PiecesPanel(){
 
-        setOpaque(false); //make it transparent
+        setOpaque(false); 
         setLayout(new GridLayout(LENGTH, LENGTH));
-        JComponent piece = new Piece();
-        add(piece);
+
     }
 }
 
